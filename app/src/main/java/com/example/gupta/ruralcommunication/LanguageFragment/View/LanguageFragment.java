@@ -14,6 +14,7 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.gupta.ruralcommunication.R;
 import com.google.android.gms.vision.CameraSource;
@@ -61,6 +62,7 @@ public class LanguageFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mRoot=inflater.inflate(R.layout.fragment_language, container, false);
+        Toast.makeText(getContext(),"Open",Toast.LENGTH_SHORT).show();
         mCameraSurfaceView=mRoot.findViewById(R.id.language_surface_view);
         mLangTextView=mRoot.findViewById(R.id.language_text_view);
         TextRecognizer textRecognizer=new TextRecognizer.Builder(getContext()).build();
