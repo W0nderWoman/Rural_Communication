@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.gupta.ruralcommunication.HomeActivity.View.HomeActivity;
 import com.example.gupta.ruralcommunication.MainActivity;
 import com.example.gupta.ruralcommunication.R;
 
@@ -24,7 +25,8 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(SplashActivity.this, MainActivity.class);
+                //Intent intent=new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent=new Intent(SplashActivity.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
             }
