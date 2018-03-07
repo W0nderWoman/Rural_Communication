@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.gupta.ruralcommunication.Splash.SplashActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        app:lottie_fileName="india.json"
+        android:id="@+id/india_animation"
+        app:lottie_loop="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rural Commnuication"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:fontFamily="@font/knighthawks"
+        android:textColor="@android:color/black"
+        android:layout_margin="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect with India as Never Before"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:layout_margin="8dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center"
+        app:lottie_fileName="scanning_animation.json"
+        android:id="@+id/scanning_animation"
+        app:lottie_loop="true"/>
+
+</LinearLayout>
