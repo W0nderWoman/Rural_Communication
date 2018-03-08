@@ -1,6 +1,7 @@
 package com.example.gupta.ruralcommunication.HomeActivity.View;
 
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,8 +15,10 @@ import android.widget.TextView;
 import com.example.gupta.ruralcommunication.AreaInfoFragment.View.AreaInfoFragment;
 import com.example.gupta.ruralcommunication.DevelopmentFragment.View.DevelopmentStatsFragment;
 import com.example.gupta.ruralcommunication.LanguageFragment.View.LanguageFragment;
+import com.example.gupta.ruralcommunication.MainActivity;
 import com.example.gupta.ruralcommunication.ProblemFragment.View.ProblemReportingFragment;
 import com.example.gupta.ruralcommunication.R;
+import com.example.gupta.ruralcommunication.Splash.SplashActivity;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -85,11 +88,14 @@ public class HomeActivity extends AppCompatActivity
                     .commit();
 
         } else if (id == R.id.nav_lang) {
-            titleTextView.setText("Communication Util");
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.home_container,new LanguageFragment())
-                    .commit();
+//            titleTextView.setText("Communication Util");
+//            getSupportFragmentManager()
+//                    .beginTransaction()
+//                    .replace(R.id.home_container,new LanguageFragment(getApplicationContext()))
+//                    .commit();
+            Intent intent=new Intent(HomeActivity.this, MainActivity.class);
+            //Intent intent=new Intent(SplashActivity.this, HomeActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -44,24 +44,26 @@ public class ProblemReportingFragment extends Fragment {
         mProblemLottieAnimationView=mRoot.findViewById(R.id.problem_animation);
         mProblemLottieAnimationView.playAnimation();
         mProblemRecyclerView=mRoot.findViewById(R.id.problem_list_view);
-        mReportProbButton=mRoot.findViewById(R.id.report_problem_button);
+        mReportProbButton= mRoot.findViewById(R.id.report_problem_button);
         ProblemPresenter problemPresenter=new ProblemPresenter();
         problemPresenter.fetchProblems(getContext(),getActivity());
         mReportProbButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                View view1=inflater.inflate(R.layout.problem_list_view,null);
+                View view1=inflater.inflate(R.layout.report_problem_sheet,null);
                 BottomSheetDialog sheetDialog=new BottomSheetDialog(getContext());
                 sheetDialog.setCanceledOnTouchOutside(true);
                 Button reportButton=view1.findViewById(R.id.write_mail_button);
                 reportButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent=new Intent((Intent.ACTION_VIEW), Uri.parse("mailtto:"+"rural.heavean@rucomm.com"));
+                        Intent intent=new Intent((Intent.ACTION_VIEW), Uri.parse("mailto:"+"rural.heavean@rucomm.com"));
                         intent.putExtra(Intent.EXTRA_SUBJECT,"New Issue in Concerned Region");
                         startActivity(intent);
                     }
                 });
+                sheetDialog.setContentView(view1);
+                sheetDialog.show();
             }
         });
         return mRoot;

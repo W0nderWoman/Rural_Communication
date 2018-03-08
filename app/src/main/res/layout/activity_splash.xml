@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rural Commnuication"
+        android:text="Gram Seva"
         android:gravity="center"
         android:textSize="25sp"
         android:fontFamily="@font/knighthawks"

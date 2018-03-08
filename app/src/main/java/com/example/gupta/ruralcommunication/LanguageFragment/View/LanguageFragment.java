@@ -2,11 +2,13 @@ package com.example.gupta.ruralcommunication.LanguageFragment.View;
 
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.SurfaceHolder;
@@ -51,9 +53,10 @@ public class LanguageFragment extends Fragment {
                 }
         }
     }
-
-    public LanguageFragment() {
+    Context mContext;
+    public LanguageFragment(Context context) {
         // Required empty public constructor
+        this.mContext=context;
     }
 
 
@@ -65,41 +68,19 @@ public class LanguageFragment extends Fragment {
         Toast.makeText(getContext(),"Open",Toast.LENGTH_SHORT).show();
         mCameraSurfaceView=mRoot.findViewById(R.id.language_surface_view);
         mLangTextView=mRoot.findViewById(R.id.language_text_view);
-        TextRecognizer textRecognizer=new TextRecognizer.Builder(getContext()).build();
-        if(textRecognizer.isOperational()){
-
+        TextRecognizer textRecognizer=new TextRecognizer.Builder(mContext).build();
+        if(!textRecognizer.isOperational()){
+            Toast.makeText(getContext(),"Not",Toast.LENGTH_SHORT).show();
+            //Log.d("reach","reached");
         }else {
-            mCameraSource=new CameraSource.Builder(getContext(),textRecognizer)
+            Log.d("reach","reached");
+            mCameraSource=new CameraSource.Builder(mContext,textRecognizer)
                     .setFacing(CameraSource.CAMERA_FACING_BACK)
                     .setRequestedPreviewSize(1280,1024)
                     .setAutoFocusEnabled(true)
+                    .setRequestedFps(15.0f)
+                    .setFacing(CameraSource.CAMERA_FACING_BACK)
                     .build();
-            mCameraSurfaceView.getHolder().addCallback(new SurfaceHolder.Callback() {
-                @Override
-                public void surfaceCreated(SurfaceHolder surfaceHolder) {
-                    try {
-                       if(ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.CAMERA)!= PackageManager.PERMISSION_DENIED){
-                           ActivityCompat.requestPermissions(getActivity(),
-                                   new String[]{Manifest.permission.CAMERA},CAMERA_REQ_INT);
-                           return;
-                       }
-                       mCameraSource.start(mCameraSurfaceView.getHolder());
-                    }
-                    catch (IOException e){
-                        e.printStackTrace();
-                    }
-                }
-
-                @Override
-                public void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i1, int i2) {
-
-                }
-
-                @Override
-                public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
-                    mCameraSource.stop();
-                }
-            });
             textRecognizer.setProcessor(new Detector.Processor<TextBlock>() {
                 @Override
                 public void release() {
