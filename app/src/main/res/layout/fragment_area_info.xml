@@ -1,0 +1,187 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.gupta.ruralcommunication.AreaInfoFragment.View.AreaInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:background="@android:color/holo_purple">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/village_image"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kid_kosmic"
+                android:textColor="@android:color/white"
+                android:text="Mawlynnong"
+                android:gravity="center"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:fontFamily="@font/xpressive_bold"
+                android:textColor="@android:color/white"
+                android:text="Mawlynnong is a village in the East Khasi Hills district of the Meghalaya state in North East India.It is famous for its cleanliness and natural attraction.
+
+It comes under the Pynursla community development block and Vidhan Sabha (legislative assembly) constituency."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:background="@android:color/holo_red_light">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/village_edu"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kid_kosmic"
+                android:textColor="@android:color/white"
+                android:text="Education"
+                android:gravity="center"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:fontFamily="@font/xpressive_bold"
+                android:textColor="@android:color/white"
+                android:text="Education is provided by the public sector as well as the private sector, with control and funding coming from three levels: central, state and local. Under various articles of the Indian Constitution, free and compulsory education is provided as a fundamental right to children between the ages of 6 and 14. The ratio of public schools to private schools is 2:5."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:background="@android:color/holo_blue_light">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/village_farm"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kid_kosmic"
+                android:textColor="@android:color/white"
+                android:text="Agriculture"
+                android:gravity="center"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:fontFamily="@font/xpressive_bold"
+                android:textColor="@android:color/white"
+                android:text="Produces both food and cash crops. The principal food crops produced in the state are rice (paddy), maize (corn), pulses, potato, wheat, etc., while the principal cash crops are tea, jute, oilseeds, sugarcane, cotton, and tobacco. Although rice is the most important and staple crop of Assam, its productivity over the years has not increased while other crops have seen a slight rise in both productivity and land acreage. For example, while rice yield per hectare in 1970-71 was 1,022 kgs compared to 1,261 kgs in 1990-91, wheat yield jumped almost three-fold from 583 kgs per hectare in 1970-71 to 1,455 kgs in 1990-91. A similar increase was observed in jute, sugarcane, potato, and rape and mustard"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:background="@android:color/holo_green_light">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/village_festival"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kid_kosmic"
+                android:textColor="@android:color/white"
+                android:text="Culture"
+                android:gravity="center"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:fontFamily="@font/xpressive_bold"
+                android:textColor="@android:color/white"
+                android:text="Khasi, the majority tribe of Meghalaya, celebrates their indigenous festivals with traditional music and merry making. Most of their music has sounds of nature like that of a waterfall, bird calls, insect sounds, hum of bees and many more. Niam Khasi, the pre-Christian Khasi religion is monotheistic in nature. There are no fixed places of worship like a church, temple or mosque. According to Niam Khasi, each element of nature has god in it. No particular part can be held holier than the other. Khasi people’s closeness to nature is evident by their belief that man should not desecrate mother nature by their actions. "/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:background="@android:color/holo_orange_dark">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/village_demo"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="4dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kid_kosmic"
+                android:textColor="@android:color/white"
+                android:text="Demographics"
+                android:gravity="center"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:fontFamily="@font/xpressive_bold"
+                android:textColor="@android:color/white"
+                android:text="As of June 2015 it had 500 residents.Also claimed as Cleanest village of Asia.
+As of 2014, there are about 95 households in Mawlynnong.The literacy rate is 90%. Agriculture is the chief occupation of the local population, with betel nut being the main crop.The people residing in the community are Khasi people."/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

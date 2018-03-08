@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "772654003959",
+    "firebase_url": "https://ruralcommunication-ce931.firebaseio.com",
+    "project_id": "ruralcommunication-ce931",
+    "storage_bucket": "ruralcommunication-ce931.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772654003959:android:516353b8f84357e0",
+        "android_client_info": {
+          "package_name": "com.example.gupta.ruralcommunication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772654003959-tdbelb5iai1bkblg6qb275dsunqv31a8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gupta.ruralcommunication",
+            "certificate_hash": "cb76557ac1a9d639f04fdc9909972a4e54134bd0"
+          }
+        },
+        {
+          "client_id": "772654003959-hlmv1gp2vv192njp6lp932f9ore2viep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCMUMpRIJUPZ2u5KCA4X7N-hHv8qHVQro"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772654003959-hlmv1gp2vv192njp6lp932f9ore2viep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

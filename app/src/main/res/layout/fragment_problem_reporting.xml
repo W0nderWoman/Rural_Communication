@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.gupta.ruralcommunication.ProblemFragment.View.ProblemReportingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                app:lottie_fileName="beauty.json"
+                android:id="@+id/problem_animation"
+                app:lottie_loop="true"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="Issues this area Faces!"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/kid_kosmic"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="8dp"
+            android:id="@+id/problem_list_view">
+        </android.support.v7.widget.RecyclerView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report New Issue"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_red_light"
+            android:fontFamily="@font/kid_kosmic"
+            android:id="@+id/report_problem_button"/>
+    </LinearLayout>
+
+
+</ScrollView>

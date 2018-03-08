@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To report a problem in the region , mention the exact location of region and area concerned, give detail description of the problem and mention the date  of Report.
+
+Your anonymity will be maintained"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/kid_kosmic"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:text="Write Description of the issue"
+        android:fontFamily="@font/kid_kosmic"
+        android:layout_margin="8dp"
+        android:id="@+id/write_mail_button"/>
+</LinearLayout>

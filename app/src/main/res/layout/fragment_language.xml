@@ -1,6 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.example.gupta.ruralcommunication.LanguageFragment.View.LanguageFragment">
 
@@ -8,14 +10,25 @@
 
     <SurfaceView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="400dp"
         android:id="@+id/language_surface_view"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="@string/hello_blank_fragment"
+        android:text="Text will appear Here"
+        android:fontFamily="@font/kid_kosmic"
+        android:layout_margin="4dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
         android:id="@+id/language_text_view"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_green_light"
+        android:fontFamily="@font/kid_kosmic"
+        android:layout_margin="4dp"/>
 
-</RelativeLayout>
+</LinearLayout>
