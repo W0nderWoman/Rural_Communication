@@ -6,7 +6,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@android:color/white"
-tools:context="com.example.gupta.ruralcommunication.MainActivity"
+tools:context="com.example.gupta.ruralcommunication.LanguageFragment.View.MainActivity"
 >
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_top"
@@ -32,7 +32,7 @@ tools:context="com.example.gupta.ruralcommunication.MainActivity"
     android:id="@+id/surface_view"
     android:layout_margin="8dp"
     android:layout_width="match_parent"
-    android:layout_height="400dp" />
+    android:layout_height="380dp" />
 
 <TextView
     android:id="@+id/text_view"
@@ -42,17 +42,45 @@ tools:context="com.example.gupta.ruralcommunication.MainActivity"
     android:textSize="15sp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/translate_button"
-        android:text="Translate"
-        android:textColor="@android:color/white"
-        android:background="@android:color/holo_green_light"
-        android:fontFamily="@font/kid_kosmic"/>
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/translate_button"
+            android:text="Translate"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_light"
+            android:fontFamily="@font/kid_kosmic"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/detect_button"
+            android:text="Detect"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_light"
+            android:fontFamily="@font/kid_kosmic"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/speech_button"
+            android:text="Voice"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_light"
+            android:fontFamily="@font/kid_kosmic"/>
+    </LinearLayout>
     <TextView
     android:id="@+id/tranlate_text_view"
-    android:text="Fetching Translation ..."
+    android:text=""
     android:fontFamily="@font/kid_kosmic"
     android:textColor="@android:color/black"
     android:textSize="15sp"

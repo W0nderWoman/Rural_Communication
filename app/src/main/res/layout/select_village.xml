@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/login_container_linear_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type name of the village"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/kid_kosmic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:id="@+id/email_edit_text"
+        android:textAlignment="gravity"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/xpressive_bold"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/login_proceed_button"
+        android:fontFamily="@font/kid_kosmic"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:padding="16sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>

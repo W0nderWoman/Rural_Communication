@@ -14,11 +14,9 @@ import android.widget.TextView;
 
 import com.example.gupta.ruralcommunication.AreaInfoFragment.View.AreaInfoFragment;
 import com.example.gupta.ruralcommunication.DevelopmentFragment.View.DevelopmentStatsFragment;
-import com.example.gupta.ruralcommunication.LanguageFragment.View.LanguageFragment;
-import com.example.gupta.ruralcommunication.MainActivity;
+import com.example.gupta.ruralcommunication.LanguageFragment.View.MainActivity;
 import com.example.gupta.ruralcommunication.ProblemFragment.View.ProblemReportingFragment;
 import com.example.gupta.ruralcommunication.R;
-import com.example.gupta.ruralcommunication.Splash.SplashActivity;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

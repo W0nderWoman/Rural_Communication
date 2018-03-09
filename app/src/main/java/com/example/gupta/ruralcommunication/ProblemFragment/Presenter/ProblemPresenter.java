@@ -29,32 +29,33 @@ public class ProblemPresenter implements ProblemPresenterCalls {
         Log.d("Reached","reach");
         final FirebaseDatabase database=FirebaseDatabase.getInstance();
         DatabaseReference databaseReference=database.getReference("Problems");
-        databaseReference.addValueEventListener(new ValueEventListener() {
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                HashMap<Object,Object> map= (HashMap<Object, Object>) dataSnapshot.getValue();
-                ArrayList<ProblemObject> problems=new ArrayList<>();
+                HashMap<Object, Object> map = (HashMap<Object, Object>) dataSnapshot.getValue();
+                ArrayList<ProblemObject> problems = new ArrayList<>();
                 //Ar<Object> list= (List<Object>) map.values( ).toArray();
-                Object[] list=map.values().toArray();
-                for(int i=0;i<map.values( ).toArray().length;i++){
-                    HashMap<String,String> map1= (HashMap<String, String>) list[i];
+                Object[] list = map.values().toArray();
+                for (int i = 0; i < map.values().toArray().length; i++) {
+                    HashMap<String, String> map1 = (HashMap<String, String>) list[i];
                     problems.add(renderProblemsAsObject(map1));
-                    Log.d("Reached","reach");
+                    Log.d("Reached", "reach");
                 }
-                Log.d("Reached","reach");
+                Log.d("Reached", "reach");
                 EventBus.getDefault().post(new ProblemModelObject(problems));
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                Log.d("Reached",databaseError.toString());
             }
         });
     }
 
     @Override
     public void repotProblems(Context context, Activity activity) {
-
+//        final FirebaseDatabase database=FirebaseDatabase.getInstance();
+//        DatabaseReference databaseReference=database.getReference("Problems");
+//        databaseReference.child("Problem7").child("").setValue("")
     }
 
     private ProblemObject renderProblemsAsObject(HashMap<String,String> map ){

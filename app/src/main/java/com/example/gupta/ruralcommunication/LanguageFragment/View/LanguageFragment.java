@@ -24,6 +24,8 @@ import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.io.IOException;
 
 /**
@@ -111,5 +113,6 @@ public class LanguageFragment extends Fragment {
         }
         return mRoot;
     }
+
 
 }
